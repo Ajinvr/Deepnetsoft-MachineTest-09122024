@@ -2,7 +2,7 @@ import menuItems from "../db/models/menuItem.js";
 
 export const getMenuItems = async (req, res) => {
   try {
-    const { menuId } = req.params;
+    const { menuId } = req.params; 
 
     const items = await menuItems.find({ menuId });
 
@@ -25,7 +25,7 @@ export const createMenuItem = async (req, res) => {
         return res.status(400).json({ message: 'MenuId, name, and price are required' });
       }
   
-      const newMenuItem = await MenuItem.create({ menuId, name, description, price });
+      const newMenuItem = await menuItems.create({ menuId, name, description, price });
   
       return res.status(201).json(newMenuItem);
     } catch (error) {
