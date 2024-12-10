@@ -10,7 +10,7 @@ connectDB();
 
 const app = express();
 
-app.use(cors('*'));
+app.use(cors({origin:"*",Credential:true}));
 app.use(bodyParser.json());
 
 // Routes
