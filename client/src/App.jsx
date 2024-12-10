@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Add from './pages/addMenu/Add';
-import AddMenuItem from './pages/addmenuitems/Addmenuitem';
+import AddMenuItem from './pages/addmenuitems/AddMenuItem';
 
 
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   {
     path: "/createmenuitem/:id",
     element: <AddMenuItem/> ,
-  },
+  }
 ]);
 
 const App = () => {
