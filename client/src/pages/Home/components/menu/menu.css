@@ -1,0 +1,43 @@
+.mbg{
+    width: 100%;
+    width: max-content;
+    position: relative;
+}
+
+.menu-card{
+    cursor: pointer;
+    color: white;
+    border: 1px solid #0796EF;
+    padding: 5px 10px;
+    background-color: black;
+    transition: background-color 0.1s ease;
+}
+
+.menu-card:active {
+    background-color: #0796EF; 
+  }
+
+.menu-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    height: max-content;
+   margin-top: -5%;
+  }
+
+  .error-message{
+    color: red;
+  }
+
+@media (max-width: 425px){
+    .mbg{
+        height: 50px;
+    }
+    .menu-div{
+      margin-top: -12%;
+    }
+}

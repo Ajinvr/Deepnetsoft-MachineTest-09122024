@@ -30,10 +30,10 @@ function Header() {
           
 
         <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-          <a href="#home">Home</a>
-          <a href="#about">Menu</a>
-          <a href="#services">MAKE A RESERVATION</a>
-          <a href="#contact">Contact us</a>
+          <a>Home</a>
+          <a href="/menu/6757802d1e6b43cf3986cafa">Menu</a>
+          <a>MAKE A RESERVATION</a>
+          <a>Contact us</a>
         </nav>
         <div className="hamburger" onClick={toggleMenu}>
           <div className="bar"></div>
